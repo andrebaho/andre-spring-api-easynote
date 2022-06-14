@@ -32,7 +32,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .authorizedGrantTypes("client_credentials")
                 .secret(encoder().encode("pass123"))
                 .scopes("user_info","read","write")
-                .redirectUris("http://localhost:8080/oauth2/token")
+                .redirectUris("http://8.219.127.212:8080/oauth2/token")
                 .autoApprove(false);
     }
     @Autowired
